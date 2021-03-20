@@ -1,0 +1,13 @@
+<resources>
+    <style name="CategoryTab" parent="Widget.Design.TabLayout">
+        <item name="tabTextAppearance">@style/CategoryTabTextAppearance</item>
+        <item name="tabMode">scrollable</item>
+        <item name="tabIndicatorColor">#394383</item>
+        <item name="tabSelectedTextColor">#485A6C</item>
+    </style>
+
+    <style name="CategoryTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    </style>
+</resources>
