@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">HackNu2021</string>
+    <string name="app_name">CommunityService</string>
+
+    <!--    Name of Places-->
+    <string name="contribution_name">Contributions</string>
+    <string name="ask_name">Askings</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

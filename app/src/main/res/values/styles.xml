@@ -1,4 +1,12 @@
 <resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
     <style name="CategoryTab" parent="Widget.Design.TabLayout">
         <item name="tabTextAppearance">@style/CategoryTabTextAppearance</item>
         <item name="tabMode">scrollable</item>
@@ -10,4 +18,26 @@
         <item name="android:textColor">@color/colorAccent</item>
         <item name="android:textAppearance">?android:textAppearanceMedium</item>
     </style>
+
+<!--    &lt;!&ndash;    Name of the place in each fragments lists&ndash;&gt;-->
+<!--    <style name="PlaceName">-->
+<!--        <item name="android:layout_width">wrap_content</item>-->
+<!--        <item name="android:layout_height">wrap_content</item>-->
+<!--        <item name="android:textAppearance">?android:textAppearanceMedium</item>-->
+<!--        <item name="android:textColor">@android:color/white</item>-->
+<!--        <item name="android:textSize">30sp</item>-->
+<!--        <item name="android:textStyle">bold</item>-->
+
+<!--    </style>-->
+
+<!--    &lt;!&ndash;    Desciption and other&ndash;&gt;-->
+<!--    <style name="Place">-->
+<!--        <item name="android:layout_width">wrap_content</item>-->
+<!--        <item name="android:layout_height">wrap_content</item>-->
+<!--        <item name="android:layout_marginTop">@dimen/margin</item>-->
+<!--        <item name="android:textAppearance">?android:textAppearanceMedium</item>-->
+<!--        <item name="android:textColor">@color/colorAccent</item>-->
+<!--        <item name="android:textSize">15sp</item>-->
+<!--    </style>-->
+
 </resources>

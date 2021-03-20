@@ -2,33 +2,32 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/regBtn"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".RegisterActivity">
 
     <EditText
-        android:background="@drawable/reg_edittext_style"
-
-        android:hint="Name"
         android:id="@+id/regName"
+
         android:layout_width="265dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
+        android:background="@drawable/reg_edittext_style"
         android:ems="10"
+        android:hint="Name"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/regMail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:background="@drawable/reg_edittext_style"
-        android:hint="Mail"
         android:id="@+id/regMail"
         android:layout_width="265dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
+        android:background="@drawable/reg_edittext_style"
         android:ems="10"
+        android:hint="Mail"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
         app:layout_constraintEnd_toEndOf="parent"
@@ -42,34 +41,34 @@
         app:layout_constraintGuide_begin="319dp" />
 
     <EditText
-        android:background="@drawable/reg_edittext_style"
-
-        android:hint="Password"
         android:id="@+id/regPassword"
+
         android:layout_width="265dp"
         android:layout_height="wrap_content"
+        android:background="@drawable/reg_edittext_style"
         android:ems="10"
+        android:hint="Password"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline4" />
 
     <EditText
-        android:background="@drawable/reg_edittext_style"
-
-        android:hint="Confirm Password"
         android:id="@+id/regPassword2"
+
         android:layout_width="265dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:background="@drawable/reg_edittext_style"
         android:ems="10"
+        android:hint="Confirm Password"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/regPassword" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/regBtn"
         android:layout_width="155dp"
         android:layout_height="wrap_content"
         android:background="@drawable/reg_btn_style"
@@ -80,5 +79,29 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/regPassword2" />
+
+    <ProgressBar
+        android:id="@+id/regProgressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="54dp"
+        android:layout_height="47dp"
+        app:layout_constraintBottom_toBottomOf="@+id/regBtn"
+        app:layout_constraintEnd_toEndOf="@+id/regBtn"
+        app:layout_constraintStart_toStartOf="@+id/regBtn"
+        app:layout_constraintTop_toTopOf="@+id/regBtn" />
+
+    <TextView
+        android:backgroundTint="#fff"
+        android:id="@+id/lblText"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lbltext_style"
+        android:text="Registration"
+        android:textSize="20dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/regName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
