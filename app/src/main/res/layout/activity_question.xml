@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuestionActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="506dp" />
+
+    <EditText
+        android:background="@drawable/question_text_style"
+
+        android:id="@+id/contribute_description"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        android:hint="Include all the information someone would need"
+        android:textSize="15dp"
+        android:gravity="top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="Descriprion"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/contribute_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:background="@drawable/question_text_style"
+
+        android:textSize="15dp"
+        android:hint="Enter what you want to help with"
+        android:id="@+id/contribute_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+
+        android:textStyle="bold"
+        android:textColor="@color/green"
+        android:id="@+id/contributeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="23dp"
+        android:text="How can you contribute?"
+        app:layout_constraintBottom_toTopOf="@+id/contribute_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:text="Tags"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+    <EditText
+        android:background="@drawable/question_text_style"
+        android:hint="Enter tags to categorize"
+        android:textSize="15dp"
+        android:id="@+id/contribute_tags"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:background="@drawable/reg_btn_style"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/green"
+        android:id="@+id/contributeBtn"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:text="Contribute"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contribute_tags" />
+
+    <ImageButton
+        android:backgroundTint="#fff"
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_back_ios_black_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

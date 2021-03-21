@@ -1,23 +1,147 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".HomeActivity">
 
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tabs"
+    <LinearLayout
+        android:id="@+id/topLinearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="top"
-        style="@style/CategoryTab"
-        android:background="@color/colorPrimary" />
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/view_pager"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="16dp"
+                    android:backgroundTint="@color/white"
+                    android:onClick="onBtnClicked"
+                    android:scaleType="center"
+                    android:src="@drawable/baseline_search_black_36" />
+
+                <ImageButton
+                    android:id="@+id/user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="250dp"
+                    android:backgroundTint="@color/white"
+                    android:onClick="onBtnClicked"
+
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/user_pic" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/back_tabs">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/select"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/back_select"
+                        android:text="" />
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/item1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:gravity="center"
+                        android:text="Contributions"
+
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/item2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Help Requests" />
+
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/HomeContributeButton"
+        style="?android:attr/borderlessButtonStyle"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onBtnClicked"
+        android:src="@drawable/frame1"
+        app:shapeAppearanceOverlay = "@drawable/frame1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listView"
+        app:maxImageSize="10dp"
+        android:padding="0dp" />
+    <ListView
+        android:id="@+id/listView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="500sp"
+        android:layout_marginTop="8dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topLinearLayout">
 
 
-</LinearLayout>
+    </ListView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

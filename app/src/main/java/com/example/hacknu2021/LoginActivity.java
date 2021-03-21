@@ -66,7 +66,6 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), com.example.hacknu2021.RegisterActivity.class);
                 startActivity(intent);
-                finish();
             }
         });
     }
